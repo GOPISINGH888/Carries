@@ -1,16 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
+import Header from '../components/Header';
+import Semester from '../components/Semester';
+import Card from '../components/Card';
 
-const Container = styled.div`
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-  text-align: center;
-  h1 {
-    color: ${props => props.theme.mainBrandColor} !important;
-  }
+const Background = styled.div`
+  background: url(https://colorlib.com/preview/theme/carries/img/slider/slide_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
 
 export default class IndexPage extends React.Component {
@@ -18,13 +17,14 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <Seo title="Home" description="Welcome to GatsbyJs v1" />
-        <section className="section">
-          <Container className="container">
-            <h1 className="title">Hi people</h1>
-            <p>Welcome to your new Gatsby site.</p>
-            <p>Now go build something great.</p>
-          </Container>
-        </section>
+        <container>
+          <Background>
+            <Header />
+            <hr />
+            <Semester />
+          </Background>
+          <Card />
+        </container>
       </Layout>
     );
   }

@@ -2,10 +2,11 @@ import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset-advanced';
 import { darken, lighten } from 'polished';
 
-const mainBrandColor = '#00D1B2';
-const lightShades = '#F5F5F5';
-const darkAccent = '#3173DC';
-const darkShades = '#0A0A0A';
+const mainBrandColor = '#ffff';
+const lightShades = '#0000ffff';
+const darkAccent = '#f39c12';
+const darkShades = '#000000';
+const greyshade = '#5d6b82';
 
 export const theme = {
   // It can be liberally applied to your layout as its main identity.
@@ -41,6 +42,7 @@ export const theme = {
   primaryFontFamily: "'Open Sans', sans-serif",
   secondaryFontFamily: "'Open Sans', sans-serif",
   boxShadow: 'rgba(0,0,0,0.08) 0px 7px 18px',
+  greyshade: '#5d6b82',
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -58,10 +60,10 @@ const GlobalStyle = createGlobalStyle`
   .button {
     font-family: ${theme.primaryFontFamily};
   }
-  p {
-    line-height: 1.5rem;
-  }
-  p, .title, .box {
+  .p {
+     line-height: 5rem;
+     }
+  .title, .box {
     color: ${theme.textColor} !important;
   }
   .subtitle {
@@ -75,18 +77,20 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   .button.is-secondary {
-    background-color: ${theme.lightAccent};
+    color: ${theme.mainBrandColor};
+    background-color: ${theme.greyshade};
     transition: background-color 0.2s ease;
-    color: #ffffff;
     :hover {
-      background-color: ${darken(0.06, theme.lightAccent)};
+      background-color: ${theme.darkAccent};
     }
   }
   .button.is-link {
-    background-color: ${theme.darkAccent};
+    color: ${theme.mainBrandColor};
+    border-color: ${theme.mainBrandColor};
+    background-color: transparent;
     transition: background-color 0.2s ease;
     :hover {
-      background-color: ${darken(0.06, theme.darkAccent)};
+      background-color: ${theme.darkAccent};
     }
   }
   .button, .input, .card {
@@ -94,6 +98,9 @@ const GlobalStyle = createGlobalStyle`
   }
   .has-text-warning {
     color: ${theme.lightAccent} !important;
+  }
+  hr{
+    background-color: ${theme.darkAccent} !important
   }
 `;
 

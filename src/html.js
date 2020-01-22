@@ -27,7 +27,7 @@ export default class HTML extends React.Component {
           <link
             href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"
             rel="stylesheet"
-          />
+          />        
           <script src="/js/scripts.js" />
           {/* Add custom css or scripts here */}
 
