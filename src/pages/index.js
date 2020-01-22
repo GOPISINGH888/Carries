@@ -3,13 +3,15 @@ import styled from 'styled-components';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
-import Semester from '../components/Semester';
+import Display from '../components/Display';
 import Card from '../components/Card';
+import Inutform from '../components/Inputform';
 
 const Background = styled.div`
   background: url(https://colorlib.com/preview/theme/carries/img/slider/slide_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 87px;
 `;
 
 export default class IndexPage extends React.Component {
@@ -21,9 +23,10 @@ export default class IndexPage extends React.Component {
           <Background>
             <Header />
             <hr />
-            <Semester />
+            <Display />
           </Background>
           <Card />
+          <Inutform />
         </container>
       </Layout>
     );

@@ -79,7 +79,7 @@ const GlobalStyle = createGlobalStyle`
   .button.is-secondary {
     color: ${theme.mainBrandColor};
     background-color: ${theme.greyshade};
-    transition: background-color 0.2s ease;
+    transition: background-color .3s ;
     :hover {
       background-color: ${theme.darkAccent};
     }
@@ -88,7 +88,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${theme.mainBrandColor};
     border-color: ${theme.mainBrandColor};
     background-color: transparent;
-    transition: background-color 0.2s ease;
+    transition: background-color .3s ;
     :hover {
       background-color: ${theme.darkAccent};
     }

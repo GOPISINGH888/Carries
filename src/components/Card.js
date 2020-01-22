@@ -2,7 +2,8 @@ import React from 'react';
 import Propcard from './Propcard';
 
 const Card = () => (
-  <div className="container section">
+    <div className="has-background-light">
+  <div className="container section ">
     <div className="columns">
       <div className="column">
         <Propcard
@@ -20,7 +21,7 @@ const Card = () => (
           largetext="AIR FREIGHT"
           smalltext="It is a long established fact 
           that a reader will be distracted by the readable content of a page when looking at its layout.."
-          icon="fas fa-ship"
+          icon="fas fa-plane"
           button="readmore"
         />
       </div>
@@ -30,11 +31,12 @@ const Card = () => (
           largetext="STREET FREIGHT"
           smalltext="It is a long established fact 
           that a reader will be distracted by the readable content of a page when looking at its layout.."
-          icon="fas fa-ship"
+          icon="fas fa-truck"
           button="readmore"
         />
       </div>
     </div>
+  </div>
   </div>
 );
 export default Card;

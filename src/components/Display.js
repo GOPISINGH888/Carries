@@ -1,5 +1,5 @@
 import React from 'react';
-const Semester = () => (
+const Display = () => (
   <section className="section">
     <div className="container has-text-centered">
       <h1 className="is-size-1 has-text-weight-bold has-text-white-bis">
@@ -30,4 +30,4 @@ const Semester = () => (
   </section>
 );
 
-export default Semester;
+export default Display;
