@@ -100,7 +100,12 @@ const GlobalStyle = createGlobalStyle`
     color: ${theme.lightAccent} !important;
   }
   hr{
-    background-color: ${theme.darkAccent} !important
+    background-color: ${theme.darkAccent} !important;
+  }
+  h4{
+    color:${theme.darkAccent} !important;
+    padding-bottom: .5rem;
+
   }
 `;
 

@@ -6,12 +6,13 @@ import Header from '../components/Header';
 import Display from '../components/Display';
 import Card from '../components/Card';
 import Inutform from '../components/Inputform';
+import Services from '../components/Services';
 
 const Background = styled.div`
   background: url(https://colorlib.com/preview/theme/carries/img/slider/slide_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 87px;
+  padding-bottom: 11rem;
 `;
 
 export default class IndexPage extends React.Component {
@@ -27,6 +28,7 @@ export default class IndexPage extends React.Component {
           </Background>
           <Card />
           <Inutform />
+          <Services />
         </container>
       </Layout>
     );

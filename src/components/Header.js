@@ -26,11 +26,15 @@ const Section = styled.section`
   .navbar-item is-size-6 {
     font-weight: 700;
     font-size: 1.2rem;
+    :focus {
+      background: none !important;
+    }
   }
   .hover:hover {
     color: ${props => props.theme.darkAccent} !important;
     background-color: ${props => props.theme.darkShades} !important;
   }
+
   .navbar-burger {
     background-color: #1c1323;
     color: #fff;
@@ -46,6 +50,9 @@ const Section = styled.section`
   p:hover {
     color: ${props => props.theme.darkAccent} !important;
     background: none !important;
+    :focus {
+      background: none !important;
+    }
   }
 `;
 
