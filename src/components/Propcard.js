@@ -40,7 +40,6 @@ const Propcard = props => (
         <div className="media-content">
           <p className="title is-5">{props.largetext}</p>
           <p className="subtitle is-7">{props.smalltext}</p>
-
           <div className="button is-secondary is-medium">{props.button}</div>
         </div>
       </div>
