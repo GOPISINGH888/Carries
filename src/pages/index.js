@@ -7,6 +7,7 @@ import Display from '../components/Display';
 import Card from '../components/Card';
 import Inutform from '../components/Inputform';
 import Services from '../components/Services';
+import Iconservice from '../components/Iconservice';
 
 const Background = styled.div`
   background: url(https://colorlib.com/preview/theme/carries/img/slider/slide_1.jpg);
@@ -29,6 +30,7 @@ export default class IndexPage extends React.Component {
           <Card />
           <Inutform />
           <Services />
+          <Iconservice />
         </container>
       </Layout>
     );
