@@ -70,10 +70,13 @@ const GlobalStyle = createGlobalStyle`
     color: ${lighten(0.06, theme.textColor)} !important;
   }
   .button.is-primary {
-    background-color: ${theme.mainBrandColor};
-    transition: background-color 0.2s ease;
+    color: ${theme.mainBrandColor};
+
+    background-color: ${theme.greyshade};
+    transition: background-color 0.3s;
     :hover {
       background-color: ${darken(0.06, theme.mainBrandColor)};
+      color: ${theme.darkAccent};
     }
   }
   .button.is-secondary {
