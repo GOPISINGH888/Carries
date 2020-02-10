@@ -8,6 +8,9 @@ import Card from '../components/Card';
 import Inutform from '../components/Inputform';
 import Services from '../components/Services';
 import Iconservice from '../components/Iconservice';
+import Delivry from '../components/Delivry';
+import Promobottom from '../components/Promobottom';
+// import Slikslider from '../components/Slikslider';
 
 const Background = styled.div`
   background: url(https://colorlib.com/preview/theme/carries/img/slider/slide_1.jpg);
@@ -31,6 +34,9 @@ export default class IndexPage extends React.Component {
           <Inutform />
           <Services />
           <Iconservice />
+          <Delivry />
+          <Promobottom />
+          {/* <Slikslider /> */}
         </container>
       </Layout>
     );

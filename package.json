@@ -40,6 +40,9 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
+    "react-slick": "^0.25.2",
+    "react-slick-slider": "^0.15.10",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^4.3.2",
     "styled-reset-advanced": "^1.0.1"
   },

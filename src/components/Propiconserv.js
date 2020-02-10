@@ -45,7 +45,7 @@ const Icnserv = styled.p`
     display: flex;
     margin-top: 4rem;
     margin-bottom: 3rem;
-    ::hover {
+    :hover {
       color: ${props => props.theme.darkAccent};
       .hexagon {
         background-color: ${props => props.theme.darkAccent};

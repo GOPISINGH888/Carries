@@ -71,7 +71,6 @@ const GlobalStyle = createGlobalStyle`
   }
   .button.is-primary {
     color: ${theme.mainBrandColor};
-
     background-color: ${theme.greyshade};
     transition: background-color 0.3s;
     :hover {
@@ -94,6 +93,15 @@ const GlobalStyle = createGlobalStyle`
     transition: background-color .3s ;
     :hover {
       background-color: ${theme.darkAccent};
+    }
+  }
+    .button.is-new {
+    color: ${theme.mainBrandColor};
+    background-color: ${theme.darkAccent};
+    transition: background-color 0.3s;
+    :hover {
+      background-color: ${darken(0.06, theme.mainBrandColor)};
+      color: ${theme.darkAccent};
     }
   }
   .button, .input, .card {
