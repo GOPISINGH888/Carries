@@ -4,19 +4,20 @@ import Propiconserv from './Propiconserv';
 
 const Iconserv = styled.div`
   margin-top: 9rem;
-  .icon {
+  .icons {
     background: url(https://colorlib.com/preview/theme/carries/img/service/service-area-bg.jpg);
     padding-bottom: 50rem;
   }
 `;
 const Iconservice = () => (
   <Iconserv className="columns">
-    <div className="column icon">
-      <p>hlo c1</p>
-    </div>
+    <div className="column icons is-hidden-mobile" />
     <div className="column">
       <div className="container">
-        <p>hello c2</p>
+        <Propiconserv icon="fab fa-dropbox" largetext="WARE HOUSE" />
+        <Propiconserv icon="fas fa-truck-moving" largetext="ROAD FREIGHT" />
+        <Propiconserv icon="fa fa-ship" largetext="SEA FREIGHT" />
+        <Propiconserv icon="fa fa-plane" largetext="AIR FREIGHT" />
       </div>
     </div>
   </Iconserv>

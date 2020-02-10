@@ -12,7 +12,7 @@ const Card = () => (
             smalltext="It is a long established fact
           that a reader will be distracted by the readable content of a page when looking at its layout.."
             icon="fas fa-ship"
-            button="readmore"
+            button="read more"
           />
         </div>
         <div className="column">
@@ -22,7 +22,7 @@ const Card = () => (
             smalltext="It is a long established fact
           that a reader will be distracted by the readable content of a page when looking at its layout.."
             icon="fas fa-plane"
-            button="readmore"
+            button="read more"
           />
         </div>
         <div className="column">
@@ -32,7 +32,7 @@ const Card = () => (
             smalltext="It is a long established fact
           that a reader will be distracted by the readable content of a page when looking at its layout.."
             icon="fas fa-truck"
-            button="readmore"
+            button="read more"
           />
         </div>
       </div>
