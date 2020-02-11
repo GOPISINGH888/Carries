@@ -9,12 +9,17 @@ const Promobottomstyle = styled.div`
     background-size: cover;
     background-position-y: center;
     background-opacity:0.6;
+    padding-bottom:8rem;
+    padding-top:8rem;
+  }
+  p{
+    margin-bottom:2rem;
   }
 `;
 const Promobottom = () => (
   <Promobottomstyle className=" has-text-centered	">
     <div className="section style">
-      <p className="title is-4">
+      <p className="is-size-4 has-text-weight-semibold has-text-white ">
         WE PROVIDE INTERNATIONAL FREIGHT & LOGISTICS SERVICE WORLDWIDW
       </p>
       <div className="button is-new is-medium">GET A QUOTE</div>

@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 
-export default class SimpleSlider extends Component {
+export default class CenterMode extends Component {
   render() {
     const settings = {
-      dots: true,
+      className: 'center',
+      centerMode: true,
       infinite: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
       speed: 5000,
-      slidesToShow: 1,
-      slidesToScroll: 1,
     };
     return (
       <div>
-        <h2> Single Item</h2>
         <Slider {...settings}>
           <div>
             <h3>1</h3>

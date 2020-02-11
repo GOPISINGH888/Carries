@@ -10,13 +10,17 @@ import Services from '../components/Services';
 import Iconservice from '../components/Iconservice';
 import Delivry from '../components/Delivry';
 import Promobottom from '../components/Promobottom';
-import Slikslider from '../components/Slikslider';
+// import Slikslider from '../components/Slikslider';
+import Upperfooter from '../components/Upperfooter';
 
 const Background = styled.div`
   background: url(https://colorlib.com/preview/theme/carries/img/slider/slide_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 11rem;
+`;
+const Footerbackground = styled.div`
+  background: url();
 `;
 
 export default class IndexPage extends React.Component {
@@ -36,7 +40,10 @@ export default class IndexPage extends React.Component {
           <Iconservice />
           <Delivry />
           <Promobottom />
-          <Slikslider />
+          {/* <Slikslider /> */}
+          <Footerbackground>
+            <Upperfooter />
+          </Footerbackground>
         </container>
       </Layout>
     );
