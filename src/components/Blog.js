@@ -6,10 +6,13 @@ const Blogstyle = styled.p`
     margin-top: 4rem;
     margin-bottom: 1rem;
   }
-  .info {
+  p {
     margin-bottom: 1rem;
   }
   a {
+    padding-bottom: 3rem;
+  }
+  h2 {
     padding-bottom: 3rem;
   }
 `;
@@ -19,10 +22,10 @@ const Blog = () => (
     <h2 className="has-text-centered is-size-3 has-text-weight-semibold ">
       NEWS & UPDATES
     </h2>
-    <p className="subtitle is-size-5 has-text-weight-semibold info has-text-grey">
+    <p className="subtitle is-size-5 has-text-weight-semibold has-text-grey">
       FEBRUARY 2020
     </p>
-    <p className="Title is-size-3 has-text-weight-bold info has-text-grey">
+    <p className="Title is-size-3 has-text-weight-bold has-text-grey">
       47+ IPHONE CASE & COVER FOR YOUR IPHONE | 6IN BLOG
     </p>
     <p className="info has-text-grey">
@@ -36,18 +39,18 @@ const Blog = () => (
       are, You feel more secure to use with these Strong Cases especially when
       you'll be traveling!
     </p>
-    <a className="info has-text-warning">read</a>
+    <a className=" has-text-warning">read</a>
     <p className="subtitle is-size-5 has-text-weight-semibold has-text-grey">
       SEPTEMBER 2019
     </p>
-    <p className="Title is-size-3 has-text-weight-bold info has-text-grey">
+    <p className="Title is-size-3 has-text-weight-bold has-text-grey">
       Welcome to 6in.co
     </p>
     <p className="info has-text-grey">
       Welcome to our website! We are really happy to launch our brand new
       e-commerce platform. - zeiq team
     </p>
-    <a className="info has-text-warning">read</a>
+    <a className=" has-text-warning">read</a>
   </Blogstyle>
 );
 export default Blog;
