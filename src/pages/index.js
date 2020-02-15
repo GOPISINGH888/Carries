@@ -12,13 +12,19 @@ import Delivry from '../components/Delivry';
 import Promobottom from '../components/Promobottom';
 // import Slikslider from '../components/Slikslider';
 import Upperfooter from '../components/Upperfooter';
-import Blog from '../components/Blog';
+import Footer from '../components/Footer';
+// import Blog from '../components/Blog';
 
 const Background = styled.div`
   background: url(https://colorlib.com/preview/theme/carries/img/slider/slide_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 11rem;
+`;
+const Footerbackground = styled.div`
+  /* background: url(https://colorlib.com/preview/theme/carries/img/footer-map-bg.png); */
+  background-color: #5d6b82;
+  /* opacity: 0.6; */
 `;
 
 export default class IndexPage extends React.Component {
@@ -39,8 +45,11 @@ export default class IndexPage extends React.Component {
           <Delivry />
           <Promobottom />
           {/* <Slikslider /> */}
-          <Upperfooter />
-          <Blog />
+          <Footerbackground>
+            <Upperfooter />
+            <Footer />
+          </Footerbackground>
+          {/* <Blog /> */}
         </container>
       </Layout>
     );
